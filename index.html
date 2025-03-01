@@ -69,14 +69,15 @@
                         </div>
                         <div>
                             <h1 class="text-sm font-normal">Task Assigned</h1>
-                            <h1 class="font-bold text-xl">06</h1>
+                            <h1 id="total-task" class="font-bold text-xl"></h1>
                         </div>
                     </div>
-                    <div class="col-span-2 bg-gradient-to-br from-[#3752FD] to-[#9BA8F8] text-white flex gap-4 items-center text-xl rounded-xl p-4">
+                    <!-- something new click area -->
+                    <div id="go-blog" class="col-span-2 bg-gradient-to-br from-[#3752FD] to-[#9BA8F8] text-white flex gap-4 items-center text-xl rounded-xl p-4 cursor-pointer">
                         <div>
                             <img src="assets/board.png" alt="Board Icon">
                         </div>
-                        <h1>
+                        <h1 class="hover:underline">
                             Discover Something <br> New Today!
                         </h1>
                     </div>
@@ -85,7 +86,8 @@
                             <img class="h-5" src="assets/calender.png" alt="Calendar Icon">
                         </div>
                         <div>
-                            <h1>some text</h1>
+                            <h1 id="day-name"></h1>
+                            <h1 id="date" class="font-semibold"></h1>
                         </div>
                     </div>
                 </div>
@@ -106,7 +108,7 @@
                                 <p class="text-xs font-normal">Deadline</p>
                                 <h1 class="text-sm font-medium">21 March 2025</h1>
                             </div>
-                            <div><button class="border-none px-4 py-2 text-xs text-white font-medium rounded-lg bg-[#3752FD] hover:bg-[#0b1c8a] duration-300">Completed</button></div>
+                            <div><button class="btn btn-sm border-none text-xs text-white font-medium rounded-lg bg-[#3752FD] hover:bg-[#0b1c8a] duration-300 task-btn-action">Completed</button></div>
                         </div>
                     </div>
 
@@ -125,7 +127,7 @@
                                 <p class="text-xs font-normal">Deadline</p>
                                 <h1 class="text-sm font-medium">21 March 2025</h1>
                             </div>
-                            <div><button class="border-none px-4 py-2 text-xs text-white font-medium rounded-lg bg-[#3752FD] hover:bg-[#0b1c8a] duration-300">Completed</button></div>
+                            <div><button class="btn btn-sm border-none text-xs text-white font-medium rounded-lg bg-[#3752FD] hover:bg-[#0b1c8a] duration-300 task-btn-action">Completed</button></div>
                         </div>
                     </div>
 
@@ -144,7 +146,7 @@
                                 <p class="text-xs font-normal">Deadline</p>
                                 <h1 class="text-sm font-medium">21 March 2025</h1>
                             </div>
-                            <div><button class="border-none px-4 py-2 text-xs text-white font-medium rounded-lg bg-[#3752FD] hover:bg-[#0b1c8a] duration-300">Completed</button></div>
+                            <div><button class="border-none text-xs text-white font-medium rounded-lg bg-[#3752FD] hover:bg-[#0b1c8a] duration-300 task-btn-action btn btn-sm ">Completed</button></div>
                         </div>
                     </div>
 
@@ -163,7 +165,7 @@
                                 <p class="text-xs font-normal">Deadline</p>
                                 <h1 class="text-sm font-medium">21 March 2025</h1>
                             </div>
-                            <div><button class="border-none px-4 py-2 text-xs text-white font-medium rounded-lg bg-[#3752FD] hover:bg-[#0b1c8a] duration-300">Completed</button></div>
+                            <div><button class="btn btn-sm border-none text-xs text-white font-medium rounded-lg bg-[#3752FD] hover:bg-[#0b1c8a] duration-300 task-btn-action">Completed</button></div>
                         </div>
                     </div>
 
@@ -182,7 +184,7 @@
                                 <p class="text-xs font-normal">Deadline</p>
                                 <h1 class="text-sm font-medium">21 March 2025</h1>
                             </div>
-                            <div><button class="border-none px-4 py-2 text-xs text-white font-medium rounded-lg bg-[#3752FD] hover:bg-[#0b1c8a] duration-300">Completed</button></div>
+                            <div><button class="btn btn-sm border-none text-xs text-white font-medium rounded-lg bg-[#3752FD] hover:bg-[#0b1c8a] duration-300 task-btn-action">Completed</button></div>
                         </div>
                     </div>
 
@@ -201,7 +203,7 @@
                                 <p class="text-xs font-normal">Deadline</p>
                                 <h1 class="text-sm font-medium">21 March 2025</h1>
                             </div>
-                            <div><button class="border-none px-4 py-2 text-xs text-white font-medium rounded-lg bg-[#3752FD] hover:bg-[#0b1c8a] duration-300">Completed</button></div>
+                            <div><button class="btn btn-sm border-none text-xs text-white font-medium rounded-lg bg-[#3752FD] hover:bg-[#0b1c8a] duration-300 task-btn-action">Completed</button></div>
                         </div>
                     </div>
                     <!-- Task Card area ends -->
@@ -225,5 +227,8 @@
         </section>
         <!-- Board section ends -->
     </main>
+    <script src="scripts/nav-blog.js"></script>
+    <script src="scripts/day-date.js"></script>
+    <script src="scripts/buttonAction.js"></script>
   </body>
 </html>
