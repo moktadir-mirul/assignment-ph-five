@@ -33,10 +33,18 @@ for (let taskBtn of taskButtons) {
     hour = hour < 10 ? "0" + hour : hour;
     let finalTime = `${hour}:${minute}:${seconds} ${format}`;
     console.log(finalTime);
-    const parentElement = taskBtn.parentElement.parentElement.parentElement;
-    // let variable = parentElement.getElementsByClassName("heading-select");
-    let variable = taskBtn.closest("heading-select, text-lg")
-    console.log(variable);
-    
+    const taskTitle = taskBtn.parentNode.parentNode.parentNode;
+    let taskTitleText = taskTitle.querySelector(".heading-select").innerText;
+    const taskContainer = document.getElementById("completed-task-container");
+    let completedTask = document.createElement("div");
+    completedTask.classList.add('bg-gray-100');
+    completedTask.classList.add('p-2');
+    completedTask.innerHTML = `<p class="text-sm font-medium">You have completed the Task ${taskTitleText} at ${finalTime}</p>`;
+    console.log(completedTask)
+    taskContainer.append(completedTask)
   });
 }
+ document.getElementById("clear-all").addEventListener("click", function() {
+    const container = document.getElementById("completed-task-container");
+    container.innerHTML = "";
+ })
