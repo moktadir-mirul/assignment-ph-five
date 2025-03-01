@@ -30,7 +30,7 @@
   <body id="body-bg" class="max-w-7xl min-h-screen pt-3 bg-gray-100 mx-auto">
 
     <!-- Nav Bar Area -->
-    <header class="w-11/12 lg:w-4/5 mx-auto p-4 bg-white rounded-xl">
+    <header class="w-11/12 mx-auto p-4 bg-white rounded-xl">
         <nav class="flex flex-col md:flex-row justify-between items-center">
             <div class="flex gap-2 items-center">
                 <img class="h-10" src="assets/logo.png" alt="Dev Board Logo">
@@ -58,7 +58,7 @@
 
     <main>
         <!-- Board section starts -->
-        <section class="w-11/12 lg:w-4/5 my-2 mx-auto grid grid-cols-1 lg:grid-cols-4 gap-2">
+        <section class="w-11/12  my-2 mx-auto grid grid-cols-1 lg:grid-cols-4 gap-2 pb-10 rounded-xl">
             <div class="col-span-3 bg-white rounded-xl">
 
                 <!-- Discover area starts -->
@@ -90,28 +90,137 @@
                     </div>
                 </div>
                 <!-- Task Container Area starts -->
-                <div class="bg-white p-5 border-d">
-                    <!-- Task Card -->
-                    <div>
-                        <div>
-                            <p>ShopEase</p>
+                <div class="bg-white p-5 grid grid-cols-1 lg:grid-cols-3 gap-4 rounded-xl">
+                    <!-- Task Card 1-->
+                    <div class="bg-gray-100 p-4 space-y-4 rounded-xl">
+                        <button class="px-4 py-2 rounded-xl bg-white text-sm font-normal">
+                            ShopEase
+                        </button>
+                        <h1 class="font-medium text-lg">Fix Mobile Button Issue </h1>
+                        <div class="bg-white p-2 font-normal text-xs rounded-xl" title="Fixing area for button, one can fix mobile button issue. Set the width and display properties accrodingly to fix it.">
+                            <p>Fixing area for button,</p>
+                            <p class="overflow-hidden whitespace-nowrap text-ellipsis">one can fix mobile button issue. Set the width and display properties accrodingly to fix it.</p>
                         </div>
-                        <h1>Fix Mobile Button Issue </h1>
-                        <div>
-                            <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                                and ensure onClick works properly</p>
-                        </div>
-                        <div>
-                            <p>Deadline</p>
-                            <h1>21 March 2025</h1>
-                            <div><button class="btn btn-primary">Completed</button></div>
+                        <div class="flex items-center justify-between border-t border-dashed border-gray-300 pt-2">
+                            <div>
+                                <p class="text-xs font-normal">Deadline</p>
+                                <h1 class="text-sm font-medium">21 March 2025</h1>
+                            </div>
+                            <div><button class="border-none px-4 py-2 text-xs text-white font-medium rounded-lg bg-[#3752FD] hover:bg-[#0b1c8a] duration-300">Completed</button></div>
                         </div>
                     </div>
+
+                    <!-- Task Card 2-->
+                    <div class="bg-gray-100 p-4 space-y-4 rounded-xl">
+                        <button class="px-4 py-2 rounded-xl bg-white text-sm font-normal">
+                            CloudSync
+                        </button>
+                        <h1 class="font-medium text-lg">Add Dark Mode</h1>
+                        <div class="bg-white p-2 font-normal text-xs rounded-xl" title="Introducing Dark mode which is a pretty new and advanced feature. Aplying dark mode to the webpage increase credibility and became more user frinedly.">
+                            <p>Introducing Dark mode which is </p>
+                            <p class="overflow-hidden whitespace-nowrap text-ellipsis">a pretty new and advanced feature. Aplying dark mode to the webpage increase credibility and became more user frinedly.</p>
+                        </div>
+                        <div class="flex items-center justify-between border-t border-dashed border-gray-300 pt-2">
+                            <div>
+                                <p class="text-xs font-normal">Deadline</p>
+                                <h1 class="text-sm font-medium">21 March 2025</h1>
+                            </div>
+                            <div><button class="border-none px-4 py-2 text-xs text-white font-medium rounded-lg bg-[#3752FD] hover:bg-[#0b1c8a] duration-300">Completed</button></div>
+                        </div>
+                    </div>
+
+                    <!-- Task Card 3-->
+                    <div class="bg-gray-100 p-4 space-y-4 rounded-xl">
+                        <button class="px-4 py-2 rounded-xl bg-white text-sm font-normal">
+                            SwiftPay
+                        </button>
+                        <h1 class="font-medium text-lg">Optimize  Home page</h1>
+                        <div class="bg-white p-2 font-normal text-xs rounded-xl" title="Home page must need be to optimized in order to handle traffic and user. An optimized homepage gives smooth and friendly experience to its user and visually eye smoothing.">
+                            <p>Home page must need be to</p>
+                            <p class="overflow-hidden whitespace-nowrap text-ellipsis"> optimized in order to handle traffic and user. An optimized homepage gives smooth and friendly experience to its user and visually eye smoothing..</p>
+                        </div>
+                        <div class="flex items-center justify-between border-t border-dashed border-gray-300 pt-2">
+                            <div>
+                                <p class="text-xs font-normal">Deadline</p>
+                                <h1 class="text-sm font-medium">21 March 2025</h1>
+                            </div>
+                            <div><button class="border-none px-4 py-2 text-xs text-white font-medium rounded-lg bg-[#3752FD] hover:bg-[#0b1c8a] duration-300">Completed</button></div>
+                        </div>
+                    </div>
+
+                    <!-- Task Card 4-->
+                    <div class="bg-gray-100 p-4 space-y-4 rounded-xl">
+                        <button class="px-4 py-2 rounded-xl bg-white text-sm font-normal">
+                            Meta
+                        </button>
+                        <h1 class="font-medium text-lg">Add new emoji 🤲</h1>
+                        <div class="bg-white p-2 font-normal text-xs rounded-xl" title="Emoji are the newest way of expressing espression. So applying right emoji is a pretty tough task. A huge collection of emoji is always appreciated.">
+                            <p>Emoji are the newest way</p>
+                            <p class="overflow-hidden whitespace-nowrap text-ellipsis">of expressing espression. So applying right emoji is a pretty tough task. A huge collection of emoji is always appreciated.</p>
+                        </div>
+                        <div class="flex items-center justify-between border-t border-dashed border-gray-300 pt-2">
+                            <div>
+                                <p class="text-xs font-normal">Deadline</p>
+                                <h1 class="text-sm font-medium">21 March 2025</h1>
+                            </div>
+                            <div><button class="border-none px-4 py-2 text-xs text-white font-medium rounded-lg bg-[#3752FD] hover:bg-[#0b1c8a] duration-300">Completed</button></div>
+                        </div>
+                    </div>
+
+                    <!-- Task Card 5-->
+                    <div class="bg-gray-100 p-4 space-y-4 rounded-xl">
+                        <button class="px-4 py-2 rounded-xl bg-white text-sm font-normal">
+                            Google LLC
+                        </button>
+                        <h1 class="font-medium text-lg">Integrate OpenAI API </h1>
+                        <div class="bg-white p-2 font-normal text-xs rounded-xl" title="AI is the next level addition to webpage. AI should be integrated with the homepage and OpenAI is the best for the following feature.  API is also appreciated.">
+                            <p>AI is the next level additon </p>
+                            <p class="overflow-hidden whitespace-nowrap text-ellipsis">to webpage. AI should be integrated with the homepage and OpenAI is the best for the following feature.  API is also appreciated.</p>
+                        </div>
+                        <div class="flex items-center justify-between border-t border-dashed border-gray-300 pt-2">
+                            <div>
+                                <p class="text-xs font-normal">Deadline</p>
+                                <h1 class="text-sm font-medium">21 March 2025</h1>
+                            </div>
+                            <div><button class="border-none px-4 py-2 text-xs text-white font-medium rounded-lg bg-[#3752FD] hover:bg-[#0b1c8a] duration-300">Completed</button></div>
+                        </div>
+                    </div>
+
+                    <!-- Task Card 6-->
+                    <div class="bg-gray-100 p-4 space-y-4 rounded-xl">
+                        <button class="px-4 py-2 rounded-xl bg-white text-sm font-normal">
+                            Glassdoar
+                        </button>
+                        <h1 class="font-medium text-lg">Improve Job searching </h1>
+                        <div class="bg-white p-2 font-normal text-xs rounded-xl" title="Adding filter is the way to improve any kind of search as well as job search. Introducing different kind of filter and keywords are the key to improve job-search.">
+                            <p>Adding filter is the way to</p>
+                            <p class="overflow-hidden whitespace-nowrap text-ellipsis">improve any kind of search as well as job search. Introducing different kind of filter and keywords are the key to improve job-search.</p>
+                        </div>
+                        <div class="flex items-center justify-between border-t border-dashed border-gray-300 pt-2">
+                            <div>
+                                <p class="text-xs font-normal">Deadline</p>
+                                <h1 class="text-sm font-medium">21 March 2025</h1>
+                            </div>
+                            <div><button class="border-none px-4 py-2 text-xs text-white font-medium rounded-lg bg-[#3752FD] hover:bg-[#0b1c8a] duration-300">Completed</button></div>
+                        </div>
+                    </div>
+                    <!-- Task Card area ends -->
+
                 </div>
 
             </div>
-            <div class="col-span-1 bg-white rounded-xl">
-                hello again
+
+            <!-- Activity Log Area -->
+            <div class="col-span-1 bg-white rounded-xl p-4">
+                <div class="space-y-5 text-center">
+                    <div class="flex gap-3 justify-center items-center">
+                        <img class="w-4" src="assets/activity.png" alt="Clock Activity Icon">
+                        <h1 class="font-semibold text-lg">Activity Log</h1>
+                    </div>
+                    <div>
+                        <button class="border-none px-4 py-2 text-xs text-white font-medium rounded-lg bg-[#3752FD] hover:bg-[#0b1c8a] duration-300">Clear History</button>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Board section ends -->
