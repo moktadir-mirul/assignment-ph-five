@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS and Daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS -->
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="max-w-7xl min-h-screen pt-3 bg-gray-100 mx-auto">
+    <header>
+        <!-- Nav bar area -->
+        <header class="w-11/12 mx-auto p-4 bg-white rounded-xl">
+            <nav class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex gap-2 items-center">
+                    <img class="h-10" src="assets/logo.png" alt="Dev Board Logo">
+                    <div>
+                        <h1 class="text-3xl font-normal">Dev<span class="font-bold">Board</span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-10">
+                    <div>
+                        <button class="btn btn-primary text-white">
+                            Back to Desk
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- nav var area ends -->
+    </header>
+    <main>
+        <h1 class="font-bold text-2xl my-5 text-center">Blogs</h1>
+        <section class="pb-5">
+            <!-- question -1 -->
+            <div class="w-11/12 mx-auto bg-white rounded-xl p-4 mb-5">
+                <div class="border-b border-dashed border-gray-300 pb-3">
+                    <h1 class="font-semibold font-lg">
+                        Question-1: What are the different ways to select an element in the DOM?
+                    </h1>
+                </div>
+                <div>
+                    <p class="font-normal text-gray-600 text-base">
+                        There are several ways to select an element in the DOM. They are mentioned below: <br>
+                        1. <b>By ID</b>(document.getElementById('ID Name')), <br>
+                        2. <b>By Class</b>(document.getElementByClassName('class-name')),  <br>
+                        3. <b>By Tag</b>(document.getElementbyTagName('Tag-Name')), <br>
+                        4. <b>By QuerySelector</b>(document.querySelector('selector class')), <br>
+                        5. <b>By querySelectorAll</b>(document.querySelectorAll('slector name')), <br>
+                        <b>Note:</b> In query selector, one have to write the selector name <b>as per the css rules</b>.
+                    </p>
+                </div>
+            </div>
+            <!-- question -2 -->
+            <div class="w-11/12 mx-auto bg-white rounded-xl p-4 mb-5">
+                <div class="border-b border-dashed border-gray-300 pb-3">
+                    <h1 class="font-semibold font-lg">
+                        Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                    </h1>
+                </div>
+                <div>
+                    <p class="font-normal text-gray-600 text-base">
+                        innerText, innerHTML, textContent are properties of Javascript DOM to manipulate what's inside an HTML element. There purpose of serving are slightly different as mentioned below: <br>
+                        <b>innerText:</b> This only sets or gets the text inside of an element. No <em>html element or tag</em> and <em>hidden text</em> won't be shown in innerText. This is basically used to manipulate only texts inside an element. <br>
+                        <b>innerHTML:</b> This sets or gets both texts and <em>html elements</em> iside an html tags. However, it doesn't include <i>hidden texts</i> inside the element. <br>
+                        <b>textContent:</b> This sets or gets the <em>text content</em> inside an element. It includes <em>texts, html tags, hidden texts</em>. However, in textContent html tags doesn't act like tags, but acts only as <em>plaine texts.</em>
+                    </p>
+                </div>
+            </div>
+            <!-- question -3 -->
+            <div class="w-11/12 mx-auto bg-white rounded-xl p-4 mb-5">
+                <div class="border-b border-dashed border-gray-300 pb-3">
+                    <h1 class="font-semibold font-lg">
+                        Question-3: What is event delegation in the DOM?
+                    </h1>
+                </div>
+                <div>
+                    <p class="font-normal text-gray-600 text-base">
+                        Event delegation is used in Javascript for handling event in DOM. Various techniques are used to handle events to improve performance and they are as below:
+                        <b>Event Bubbling:</b> Event bubbling in the Document Object Model (DOM) is a mechanism in JavaScript where an event triggered on a child element of a container also gets propagated to the parent elements unless stopped. <br>
+                        <b>Event Listener:</b> Event Listener mainly used to handle a single event in a single element, instead of bubbling inward or outward. It is very helpful to handle eevent in a selected element. <br>
+                        <b>Event Targeting:</b> Event targeting allows us to target in which element the event has happened and manipulate it. Simply, <i>event.target</i> property is used to indicate that element.                      
+                    </p>
+                </div>
+            </div>
+            <!-- question -4 -->
+            <div class="w-11/12 mx-auto bg-white rounded-xl p-4 mb-5">
+                <div class="border-b border-dashed border-gray-300 pb-3">
+                    <h1 class="font-semibold font-lg">
+                        Question-1: What are the different ways to select an element in the DOM?
+                    </h1>
+                </div>
+                <div>
+                    <p class="font-normal text-gray-600 text-base">
+                        There are several ways to select an element in the DOM. They are mentioned below: <br>
+                        1. <b>By ID</b>(document.getElementById('ID Name')), <br>
+                        2. <b>By Class</b>(document.getElementByClassName('class-name')),  <br>
+                        3. <b>By Tag</b>(document.getElementbyTagName('Tag-Name')), <br>
+                        4. <b>By QuerySelector</b>(document.querySelector('selector class')), <br>
+                        5. <b>By querySelectorAll</b>(document.querySelectorAll('slector name')), <br>
+                        <b>Note:</b> In query selector, one have to write the selector name <b>as per the css rules</b>.
+                    </p>
+                </div>
+            </div>
+                        <!-- question -5 -->
+            <div class="w-11/12 mx-auto bg-white rounded-xl p-4 mb-5">
+                <div class="border-b border-dashed border-gray-300 pb-3">
+                    <h1 class="font-semibold font-lg">
+                        Question-1: What are the different ways to select an element in the DOM?
+                    </h1>
+                </div>
+                <div>
+                    <p class="font-normal text-gray-600 text-base">
+                        There are several ways to select an element in the DOM. They are mentioned below: <br>
+                        1. <b>By ID</b>(document.getElementById('ID Name')), <br>
+                        2. <b>By Class</b>(document.getElementByClassName('class-name')),  <br>
+                        3. <b>By Tag</b>(document.getElementbyTagName('Tag-Name')), <br>
+                        4. <b>By QuerySelector</b>(document.querySelector('selector class')), <br>
+                        5. <b>By querySelectorAll</b>(document.querySelectorAll('slector name')), <br>
+                        <b>Note:</b> In query selector, one have to write the selector name <b>as per the css rules</b>.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+  </body>
+</html>
