@@ -16,6 +16,9 @@ for (let taskBtn of taskButtons) {
     let allTaskNum = Number(document.getElementById("all-task").innerText);
     allTaskNum = allTaskNum + 1;
     document.getElementById("all-task").innerText = allTaskNum;
+    if(totalTaskNum == 0) {
+        alert('Congrats!')
+    }
     let timeNow = new Date();
     let format = "AM";
     let hour = timeNow.getHours();
@@ -31,8 +34,9 @@ for (let taskBtn of taskButtons) {
     let finalTime = `${hour}:${minute}:${seconds} ${format}`;
     console.log(finalTime);
     const parentElement = taskBtn.parentElement.parentElement.parentElement;
-    let variable = taskBtn.closest(".heading-select")
-    console.log(parentElement);
+    // let variable = parentElement.getElementsByClassName("heading-select");
+    let variable = taskBtn.closest("heading-select, text-lg")
+    console.log(variable);
     
   });
 }
