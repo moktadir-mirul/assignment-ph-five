@@ -97,7 +97,7 @@
                 </div>
                 <div>
                     <p class="font-normal text-gray-600 text-base">
-                        Event delegation is used in Javascript for handling event in DOM. Various techniques are used to handle events to improve performance and they are as below:
+                        Event delegation is used in Javascript for handling event in DOM. Various techniques are used to handle events to improve performance and event delegatin is works as below:
                         <b>Event Bubbling:</b> Event bubbling in the Document Object Model (DOM) is a mechanism in JavaScript where an event triggered on a child element of a container also gets propagated to the parent elements unless stopped. <br>
                         <b>Event Listener:</b> Event Listener mainly used to handle a single event in a single element, instead of bubbling inward or outward. It is very helpful to handle eevent in a selected element. <br>
                         <b>Event Targeting:</b> Event targeting allows us to target in which element the event has happened and manipulate it. Simply, <i>event.target</i> property is used to indicate that element.                      
@@ -108,37 +108,30 @@
             <div class="w-11/12 mx-auto bg-white rounded-xl p-4 mb-5">
                 <div class="border-b border-dashed border-gray-300 pb-3">
                     <h1 class="font-semibold font-lg">
-                        Question-1: What are the different ways to select an element in the DOM?
+                        Question-4: What is event bubbling in the DOM?
                     </h1>
                 </div>
                 <div>
                     <p class="font-normal text-gray-600 text-base">
-                        There are several ways to select an element in the DOM. They are mentioned below: <br>
-                        1. <b>By ID</b>(document.getElementById('ID Name')), <br>
-                        2. <b>By Class</b>(document.getElementByClassName('class-name')),  <br>
-                        3. <b>By Tag</b>(document.getElementbyTagName('Tag-Name')), <br>
-                        4. <b>By QuerySelector</b>(document.querySelector('selector class')), <br>
-                        5. <b>By querySelectorAll</b>(document.querySelectorAll('slector name')), <br>
-                        <b>Note:</b> In query selector, one have to write the selector name <b>as per the css rules</b>.
+                        Event bubble refers to the incident where an event triggered in a child element of a container gradually propagates outward to  its parents as well as container element respectively. <br>
+                        This allows developers to handle events on multiple levels of the DOM hierarchy with a single event listener. <br> The direction of the event bubble is from <b>target to root</b>.
                     </p>
                 </div>
             </div>
-                        <!-- question -5 -->
+            <!-- question -5 -->
             <div class="w-11/12 mx-auto bg-white rounded-xl p-4 mb-5">
                 <div class="border-b border-dashed border-gray-300 pb-3">
                     <h1 class="font-semibold font-lg">
-                        Question-1: What are the different ways to select an element in the DOM?
+                        Question-5: How do you create, add, and remove elements using JavaScript?
                     </h1>
                 </div>
                 <div>
                     <p class="font-normal text-gray-600 text-base">
-                        There are several ways to select an element in the DOM. They are mentioned below: <br>
-                        1. <b>By ID</b>(document.getElementById('ID Name')), <br>
-                        2. <b>By Class</b>(document.getElementByClassName('class-name')),  <br>
-                        3. <b>By Tag</b>(document.getElementbyTagName('Tag-Name')), <br>
-                        4. <b>By QuerySelector</b>(document.querySelector('selector class')), <br>
-                        5. <b>By querySelectorAll</b>(document.querySelectorAll('slector name')), <br>
-                        <b>Note:</b> In query selector, one have to write the selector name <b>as per the css rules</b>.
+                        Various methods can be used to create, add and remove elements using Javascript in DOM. Some of the popular methods are as below:
+                        <b>1. To create element:</b> For creating elements <i>createElement()</i> method is used commonly. Code snippet- <i>document.createElement('element name')</i>; <br>
+                        <b>2. To add element:</b> For adding elements, mainly appendChild() method is used. Code snippet - <i>parenteElementName.appendChild(createdElementName)</i>; <br>
+                        <b>3. To remove element:</b> For removing element, mainly removeChild() method is used. Code snippet - <i>parenteElementName.removeChild(element name that is to be removed)</i>; <br>
+                        Howover, besides this method some other mathod can be used like append() for adding element, remove() for removing element etc.
                     </p>
                 </div>
             </div>
