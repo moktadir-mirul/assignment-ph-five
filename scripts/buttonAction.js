@@ -6,13 +6,16 @@ if (taskButtons.length < 10 ) {
 }
 
 for (let taskBtn of taskButtons) {
-    taskBtn.addEventListener('click', function(event) {
+    taskBtn.addEventListener('mouseup', function(event) {
         alert('Board added succesfully')
         let btnAction = event.target;
-        console.log(btnAction);
-        btnAction.classList.add("btn-disbaled");
-        
-        
+        btnAction.classList.add("btn-disabled");
+        let totalTaskNum = Number(document.getElementById("total-task").innerText);
+        totalTaskNum = totalTaskNum - 1;
+        document.getElementById("total-task").innerText = "0"+totalTaskNum;
+        let allTaskNum = Number(document.getElementById('all-task').innerText);
+        allTaskNum = allTaskNum + 1;
+        document.getElementById("all-task").innerText = allTaskNum;
     })
     
 }
