@@ -20,21 +20,16 @@ for (let taskBtn of taskButtons) {
         alert('Congrates!!! You have completed all the current task.')
     }
     let timeNow = new Date();
-    let format = "AM";
     let hour = timeNow.getHours();
     let minute = timeNow.getMinutes();
     let seconds = timeNow.getSeconds();
-    if (hour == 0) {
-      hour = 12;
-    } else if (hour > 12) {
-      format = "PM";
-      hour = hour - 12;
-    }
+    let format = hour >= 12 ? "PM" : "AM";
+    hour = hour % 12;
+    hour = hour ? hour : 12;
     hour = hour < 10 ? "0" + hour : hour;
     minute = minute < 10 ? "0"+minute : minute;
     seconds = seconds < 10 ? "0"+seconds : seconds;
     let finalTime = `${hour}:${minute}:${seconds} ${format}`;
-    console.log(finalTime);
     
     const taskTitle = taskBtn.parentNode.parentNode.parentNode;
     let taskTitleText = taskTitle.querySelector(".heading-select").innerText;
