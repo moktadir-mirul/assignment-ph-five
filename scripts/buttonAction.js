@@ -7,7 +7,7 @@ if (taskButtons.length < 10) {
 
 for (let taskBtn of taskButtons) {
   taskBtn.addEventListener("click", function (event) {
-    alert("Board added succesfully");
+    alert("Board updated succesfully");
     let btnAction = event.target;
     btnAction.classList.add("btn-disabled");
     let totalTaskNum = Number(document.getElementById("total-task").innerText);
@@ -17,7 +17,7 @@ for (let taskBtn of taskButtons) {
     allTaskNum = allTaskNum + 1;
     document.getElementById("all-task").innerText = allTaskNum;
     if(totalTaskNum == 0) {
-        alert('Congrats!')
+        alert('Congrates!!! You have completed all the current task.')
     }
     let timeNow = new Date();
     let format = "AM";
@@ -31,8 +31,11 @@ for (let taskBtn of taskButtons) {
       hour = hour - 12;
     }
     hour = hour < 10 ? "0" + hour : hour;
+    minute = minute < 10 ? "0"+minute : minute;
+    seconds = seconds < 10 ? "0"+seconds : seconds;
     let finalTime = `${hour}:${minute}:${seconds} ${format}`;
     console.log(finalTime);
+    
     const taskTitle = taskBtn.parentNode.parentNode.parentNode;
     let taskTitleText = taskTitle.querySelector(".heading-select").innerText;
     const taskContainer = document.getElementById("completed-task-container");
@@ -40,8 +43,7 @@ for (let taskBtn of taskButtons) {
     completedTask.classList.add('bg-gray-100');
     completedTask.classList.add('p-2');
     completedTask.innerHTML = `<p class="text-sm font-medium">You have completed the Task ${taskTitleText} at ${finalTime}</p>`;
-    console.log(completedTask)
-    taskContainer.append(completedTask)
+    taskContainer.append(completedTask);
   });
 }
  document.getElementById("clear-all").addEventListener("click", function() {
